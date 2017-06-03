@@ -1,0 +1,53 @@
+html, body, .slider {
+    height: 100%;
+    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+
+}
+.slider {
+    background: red;
+    background-size: cover;
+    position:relative;
+    width: 1365px;
+    background-image: url(../images/01.jpg);
+}
+.thumbs{
+    width:100%;
+    position:absolute;
+    bottom:0;
+    margin:0 auto;
+    padding:20px 0px;
+    background:rgba(1, 0, 18, .5);
+}
+.thumb{
+    width:calc((100% - 40px)/5);
+    height:120px;
+    margin:5px;
+    border:2px solid white;
+    box-sizing:border-box;
+    overflow: hidden;
+    float:left;
+}
+.thumbs div:first-child{
+    margin-left:0;
+}
+.thumbs div:last-child{
+    margin-right:0;
+}
+.thumb img{
+    width:100%;
+}
+#previous{
+    float: left;
+    position:absolute;
+    top:220px;
+    left:2%;
+}
+#next{
+    float:right;
+    position:absolute;
+    top:220px;
+    right: 2%;
+}
